@@ -595,7 +595,15 @@
           ]
         }
       ],
-      "PkaTypes": [],
+      "PkaTypes": [
+        {
+          "Type": "Acid",
+          "Pka": 7.0,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
       "Processes": [
         {
           "InternalName": "GlomerularFiltration",
@@ -808,7 +816,7 @@
             }
           ],
           "Name": "Sim 1 - intravenous",
-          "OriginText": "Undefined\nSim 1 - intravenous\n2019-08-22 15:30"
+          "OriginText": "Compound\nSim 1 - intravenous\n2019-08-22 16:57"
         }
       ]
     },
@@ -946,7 +954,7 @@
             }
           ],
           "Name": "Sim 2 - peroral",
-          "OriginText": "Undefined\nSim 2 - peroral\n2019-08-22 15:30"
+          "OriginText": "Compound\nSim 2 - peroral\n2019-08-22 16:57"
         }
       ]
     }
