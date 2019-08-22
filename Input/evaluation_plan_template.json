@@ -2,8 +2,8 @@
     "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v2.0/OSP_Qualification_Plan_Schema.json",
     "Projects": [
         {
-            "Id": "project",
-            "Path": "project/project.json",
+            "Id": "Compound",
+            "Path": "https://raw.githubusercontent.com/sfrechen/Evaluation-plan-template/master/Compound.json",
             "BuildingBlocks": [],
             "SimulationParameters": []
         }
@@ -121,31 +121,49 @@
         },
         "AllPlots": [
             {
-                "Project": "<Enter Project Id>",
-                "Simulation": "<Enter Simulation Name>",
+                "Project": "Compound",
+                "Simulation": "Sim 1 - intravenous",
+                "SectionId": 33
+            },
+            {
+                "Project": "Compound",
+                "Simulation": "Sim 2 - peroral",
                 "SectionId": 33
             }
         ],
         "GOFMergedPlots": [
             {
-                "Title": "<Enter Plot Title>",
+                "Title": "Goodness of fit plor for concentration in plasma",
                 "SectionId": 32,
                 "Artifacts": [
+                    "Plot",
                     "GMFE",
-                    "Measure",
-                    "Plot"
+                    "Measure"
                 ],
                 "PlotType": "predictedVsObserved|residualsOverTime",
                 "Groups": [
                     {
-                        "Caption": "<Enter Group Name>",
+                        "Caption": "Intravenous administration",
                         "Symbol": "Circle",
                         "OutputMappings": [
                             {
-                                "Project": "<Enter Project Id>",
-                                "Simulation": "<Enter Simulation Name>",
-                                "Output": "Organism|PeripheralVenousBlood|<COMPPUND>|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "<Enter Observed Data Id>",
+                                "Project": "Compound",
+                                "Simulation": "Sim 1 - intravenous",
+                                "Output": "Organism|PeripheralVenousBlood|COMPOUND|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Observed data iv",
+                                "Color": "#FF0000"
+                            }
+                        ]
+                    },
+                    {
+                        "Caption": "Oral administration",
+                        "Symbol": "Square",
+                        "OutputMappings": [
+                            {
+                                "Project": "Compound",
+                                "Simulation": "Sim 2 - peroral",
+                                "Output": "Organism|PeripheralVenousBlood|COMPOUND|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Observed data po",
                                 "Color": "#FF0000"
                             }
                         ]
@@ -159,9 +177,15 @@
     },
     "Inputs": [
         {
-            "Project": "<Enter Project Id>",
-            "Name": "<Enter BuildingBlock Name>",
+            "Project": "Compound",
+            "Name": "COMPOUND",
             "Type": "Compound",
+            "SectionId": 31
+        },
+        {
+            "Project": "Compound",
+            "Name": "Tablet",
+            "Type": "Formulation",
             "SectionId": 31
         }
     ],
