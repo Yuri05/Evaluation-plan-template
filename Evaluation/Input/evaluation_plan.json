@@ -3,7 +3,7 @@
     "Projects": [
         {
             "Id": "Compound",
-            "Path": "https://raw.githubusercontent.com/sfrechen/Evaluation-plan-template/master/Compound.json",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Evaluation-plan-template/master/Compound.json",
             "BuildingBlocks": [],
             "SimulationParameters": []
         }
