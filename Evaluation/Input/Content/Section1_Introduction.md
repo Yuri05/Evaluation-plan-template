@@ -1,10 +1,8 @@
-The presented model building and evaluation report evaluates the performance of PBPK model for ``COMPOUND`` in adults.
+COMPOUND is an active, highly selective ... (Information about Pharmacology)
 
- 
+COMPOUND is ...  (Information about relevant Pharmacokinetics)
 
-The ``COMPOUND`` model is a whole-body PBPK model, allowing for ...
+The herein presented model building and evaluation report evaluates the performance of the PBPK model for COMPOUND in (healthy) adults.
 
-[...]
-
-The presented ``COMPOUND`` PBPK model as well as the respective evaluation plan and PBPK report are provided open-source  (https://github.com/sfrechen/Evaluation-plan-template).
+The presented COMPOUND PBPK model as well as the respective evaluation plan and evaluation report are provided open-source (https://github.com/.../Compound-model).
 

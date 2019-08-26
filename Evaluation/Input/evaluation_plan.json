@@ -202,17 +202,17 @@
             "Sections": [
                 {
                     "Id": 21,
-                    "Title": "2.1 Modeling strategy",
+                    "Title": "2.1 Modeling Strategy",
                     "Content": "Content/Section2.1_Modeling_Strategy.md"
                 },
                 {
                     "Id": 22,
-                    "Title": "2.2 Data used",
-                    "Content": "Content/Section2.2_Data_used.md"
+                    "Title": "2.2 Data",
+                    "Content": "Content/Section2.2_Data.md"
                 },
                 {
                     "Id": 23,
-                    "Title": "2.3 Model parameters and assumptions",
+                    "Title": "2.3 Model Parameters and Assumptions",
                     "Content": "Content/Section2.3_Model_Parameters_and_Assumptions.md"
                 }
             ]
@@ -234,8 +234,20 @@
                 },
                 {
                     "Id": 33,
-                    "Title": "3.3: Concentration-Time profiles",
-                    "Content": "Content/Concentration_time_profiles.md"
+                    "Title": "3.3: Concentration-Time Profiles",
+                    "Content": "Content/Concentration_time_profiles.md",
+                    "Sections": [
+                        {
+                            "Id": 331,
+                            "Title": "3.3.1 Model Building",
+                            "Content": "Content/Concentration_time_profiles_building.md"
+                        },
+                        {
+                            "Id": 332,
+                            "Title": "3.3.2 Model Verification",
+                            "Content": "Content/Concentration_time_profiles_verification.md"
+                        }
+                    ]
                 }
             ]
         },
