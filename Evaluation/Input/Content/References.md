@@ -4,4 +4,4 @@
 
 **Schlender 2016** Schlender JF, Meyer M, Thelen K, Krauss M, Willmann S, Eissing T, Jaehde U. Development of a Whole-Body Physiologically Based Pharmacokinetic Approach to Assess the Pharmacokinetics of Drugs in Elderly Individuals. Clin Pharmacokinet. 2016 Dec;55(12):1573-1589. 	
 
-**Dummy YEAR** Dummy D, Doe J, Doe A. Pharmackoniteic study of COMPOUND. JOURNAL. YEAR Mon;ISSUE:PAGES. doi: DOI.	
+**Dummy YEAR** Dummy D, Doe J, Doe A. Pharmacokinetic study of COMPOUND. JOURNAL. YEAR Mon;ISSUE:PAGES. doi: DOI.	
