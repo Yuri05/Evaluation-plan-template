@@ -4,12 +4,12 @@ A literature search was performed to collect available information on physicoche
 
 | **Parameter**   | **Unit** | **Value** | Source                                     | **Description**                                 |
 | :-------------- | -------- | --------- | ------------------------------------------ | ----------------------------------------------- |
-| MW              | g/mol    |           | [Dummy YEAR](# 5 References)               | Molecular weight                                |
-| pK<sub>a</sub>  |          |           | [DrugBank DB06292](# 5 References)         | Acid dissociation constant                      |
-| Solubility (pH) |          |           | [Dummy YEAR](# 5 References)               | Aqueous Solubility, FaSSIF, ...                 |
-| logP            |          |           | [Dummy YEAR](#5 References) (experimental) | Partition coefficient between octanol and water |
-| fu              | %        |           | [Dummy YEAR](#5 References)                | Fraction unbound in plasma                      |
-| B/P ratio       |          |           | [Dummy YEAR](#5 References)                | Blood to plasma ratio                           |
+| MW              | g/mol    |           | [Dummy YEAR](#5-references)               | Molecular weight                                |
+| pK<sub>a</sub>  |          |           | [DrugBank DB06292](#5-references)         | Acid dissociation constant                      |
+| Solubility (pH) |          |           | [Dummy YEAR](#5-references)               | Aqueous Solubility, FaSSIF, ...                 |
+| logP            |          |           | [Dummy YEAR](#5-references) (experimental) | Partition coefficient between octanol and water |
+| fu              | %        |           | [Dummy YEAR](#5-references)                | Fraction unbound in plasma                      |
+| B/P ratio       |          |           | [Dummy YEAR](#5-references)                | Blood to plasma ratio                           |
 | ...             |          |           |                                            | ....                                            |
 
 ### 2.2.2	Clinical Data
@@ -22,7 +22,7 @@ The following studies were used for model building (training data):
 
 | Publication                 | Arm / Treatment / Information used for model building |
 | :-------------------------- | :---------------------------------------------------- |
-| [Dummy YEAR](#5 References) | Healthy Subjects with a single dose of X mg           |
+| [Dummy YEAR](#5-references) | Healthy Subjects with a single dose of X mg           |
 | ...                         | ...                                                   |
 | ...                         | ...                                                   |
 | ...                         | ...                                                   |
@@ -33,7 +33,7 @@ The following studies were used for model verification:
 
 | Publication                 | Arm / Treatment / Information used for model building |
 | :-------------------------- | :---------------------------------------------------- |
-| [Dummy YEAR](#5 References) | Healthy Subjects with a single dose of Y mg           |
+| [Dummy YEAR](#5-references) | Healthy Subjects with a single dose of Y mg           |
 | ...                         | ...                                                   |
 | ...                         | ...                                                   |
 | ...                         | ...                                                   |
