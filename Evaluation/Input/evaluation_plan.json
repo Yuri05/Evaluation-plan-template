@@ -1,9 +1,9 @@
 {
-    "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v2.0/OSP_Qualification_Plan_Schema.json",
+    "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v3.0/OSP_Qualification_Plan_Schema.json",
     "Projects": [
         {
             "Id": "Compound",
-            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Evaluation-plan-template/master/Compound.json",
+            "Path": "../../Compound.json",
             "BuildingBlocks": [],
             "SimulationParameters": []
         }
@@ -123,24 +123,27 @@
             {
                 "Project": "Compound",
                 "Simulation": "Sim 1 - intravenous",
-                "SectionId": 33
+                "SectionReference": "ct-profiles"
             },
             {
                 "Project": "Compound",
                 "Simulation": "Sim 2 - peroral",
-                "SectionId": 33
+                "SectionReference": "ct-profiles"
             }
         ],
         "GOFMergedPlots": [
             {
-                "Title": "Goodness of fit plor for concentration in plasma",
-                "SectionId": 32,
+                "Title": "Goodness of fit plot for concentration in plasma",
+                "SectionReference": "diagnostics-plots",
                 "Artifacts": [
                     "Plot",
                     "GMFE",
                     "Measure"
                 ],
-                "PlotType": "predictedVsObserved|residualsOverTime",
+                "PlotTypes": [
+                    "predictedVsObserved",
+                    "residualsOverTime"
+                ],
                 "Groups": [
                     {
                         "Caption": "Intravenous administration",
@@ -180,85 +183,72 @@
             "Project": "Compound",
             "Name": "COMPOUND",
             "Type": "Compound",
-            "SectionId": 31
+            "SectionReference": "final-input-parameters"
         },
         {
             "Project": "Compound",
             "Name": "Tablet",
             "Type": "Formulation",
-            "SectionId": 31
+            "SectionReference": "final-input-parameters"
         }
     ],
     "Sections": [
         {
-            "Id": 1,
-            "Title": "1 Introduction",
+            "Reference": "introduction",
+            "Title": "Introduction",
             "Content": "Content/Section1_Introduction.md"
         },
         {
-            "Id": 2,
-            "Title": "2 Methods",
-            "Content": "Content/Section2_Methods.md",
+            "Reference": "methods",
+            "Title": "Methods",
             "Sections": [
                 {
-                    "Id": 21,
-                    "Title": "2.1 Modeling Strategy",
+                    "Reference": "modeling-strategy",
+                    "Title": "Modeling Strategy",
                     "Content": "Content/Section2.1_Modeling_Strategy.md"
                 },
                 {
-                    "Id": 22,
-                    "Title": "2.2 Data",
+                    "Reference": "methods-data",
+                    "Title": "Data",
                     "Content": "Content/Section2.2_Data.md"
                 },
                 {
-                    "Id": 23,
-                    "Title": "2.3 Model Parameters and Assumptions",
+                    "Reference": "model-parameters-and-assumptions",
+                    "Title": "Model Parameters and Assumptions",
                     "Content": "Content/Section2.3_Model_Parameters_and_Assumptions.md"
                 }
             ]
         },
         {
-            "Id": 3,
-            "Title": "3 Results and Discussion",
+            "Reference": "results-and-discussion",
+            "Title": "Results and Discussion",
             "Content": "Content/Section3_Results_and_Discussion.md",
             "Sections": [
                 {
-                    "Id": 31,
-                    "Title": "3.1 Final input parameters",
+                    "Reference": "final-input-parameters",
+                    "Title": "Final input parameters",
                     "Content": "Content/Input_table.md"
                 },
                 {
-                    "Id": 32,
-                    "Title": "3.2 Diagnostics Plots",
+                    "Reference": "diagnostics-plots",
+                    "Title": "Diagnostics Plots",
                     "Content": "Content/GOF_diagnostics.md"
                 },
                 {
-                    "Id": 33,
-                    "Title": "3.3: Concentration-Time Profiles",
-                    "Content": "Content/Concentration_time_profiles.md",
-                    "Sections": [
-                        {
-                            "Id": 331,
-                            "Title": "3.3.1 Model Building",
-                            "Content": "Content/Concentration_time_profiles_building.md"
-                        },
-                        {
-                            "Id": 332,
-                            "Title": "3.3.2 Model Verification",
-                            "Content": "Content/Concentration_time_profiles_verification.md"
-                        }
-                    ]
+                    "Reference": "ct-profiles",
+                    "Title": "Concentration-Time Profiles",
+                    "Content": "Content/Concentration_time_profiles.md"
                 }
             ]
         },
         {
-            "Id": 4,
-            "Title": "4 Conclusion",
-            "Content": "Content/Section4_Conclusion.md"
+            "Reference": "conclusion",
+            "Title": "Conclusion",
+            "Content": "Content/Conclusion.md"
         },
         {
-            "Id": 5,
-            "Title": "5 References",
+            "Reference": "main-references",
+            "Title": "References",
             "Content": "Content/References.md"
         }
     ],
